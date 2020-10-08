@@ -1,17 +1,46 @@
-/* Error: Expected ".
- *    ,
- * 13 |     font-family: "arial;
- *    |                         ^
- *    '
- *   sass/styles.scss 13:25  root stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Expected ".\a    \2577 \a 13 \2502      font-family: "arial;\a    \2502                          ^\a    \2575 \a   sass/styles.scss 13:25  root stylesheet';
+.electro-jazz-container {
+  max-width: 1200px;
+  min-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: "Roboto Condensed", arial, sans-serif;
+}
+.electro-jazz-container h1 {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 70px 0;
+  font-size: 200px;
+  font-weight: 400;
+}
+
+.footer {
+  position: relative;
+  max-width: 1200px;
+  min-width: 400px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  border-top: 10px solid #000000;
+  align-content: center;
+}
+.footer h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px;
+}
+.footer p {
+  font-size: 10px;
+  font-weight: 400;
+  margin: 20px;
+  align-self: center;
 }

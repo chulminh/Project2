@@ -4,37 +4,55 @@
 }
 
 .electro-jazz-container {
-    width: 800px;
+    max-width: 1200px;
+    min-width:400px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    font-family: "arial;
+    font-family: "Roboto Condensed", arial, sans-serif;
 
     h1 {
         width: 200px;
         height: 200px;
-        font-size: 200px;
         text-align: center;
-    }
+        margin: 70px 0;
 
-    .footer {
-        display: flex;
-        justify-content: space-around;
-        flex: 1;
-        border-top: 10px solid #000000;
-
-        h2 {
-            font-size: 16px;
-            margin: 20px;
-        }
-
-        p {
-            font-size: 8px;
-            margin: 20px;
-            align-self: center;
+        font: {
+            size: 200px;
+            weight: 400;
         }
     }
+}
 
+.footer {
+    position:relative;
+    max-width: 1200px;
+    min-width:400px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    border-top: 10px solid #000000;
+    align-content: center;
+
+    h2 {
+        font: {
+            size: 16px;
+            weight: 700;
+        }
+
+        margin: 20px;
+    }
+
+    p {
+        font: {
+            size: 10px;
+            weight: 400;
+        }
+
+        margin: 20px;
+        align-self: center;
+    }
 }
