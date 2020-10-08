@@ -1,32 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+/* Error: Expected ".
+ *    ,
+ * 13 |     font-family: "arial;
+ *    |                         ^
+ *    '
+ *   sass/styles.scss 13:25  root stylesheet */
 
-.electro-jazz-container {
-  width: 800px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  font-family: arial;
-}
-.electro-jazz-container h1 {
-  width: 200px;
-  height: 200px;
-  font-size: 100px;
-}
-.electro-jazz-container .footer {
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-}
-.electro-jazz-container .footer h2 {
-  font-size: 16px;
-  margin: 20px;
-}
-.electro-jazz-container .footer p {
-  font-size: 8px;
-  margin: 20px;
-  align-self: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Expected ".\a    \2577 \a 13 \2502      font-family: "arial;\a    \2502                          ^\a    \2575 \a   sass/styles.scss 13:25  root stylesheet';
 }
