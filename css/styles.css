@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: #262626;
 }
 
 .electro-jazz-container {
@@ -18,6 +19,7 @@
   height: 200px;
   text-align: center;
   margin: 70px 0;
+  color: #ba3c2c;
   font-size: 200px;
   font-weight: 400;
 }
@@ -29,17 +31,18 @@
   display: flex;
   justify-content: space-around;
   flex: 1;
-  border-top: 10px solid #000000;
+  border-top: 10px solid #ba3c2c;
   align-content: center;
+  color: #4d81d5;
 }
 .footer h2 {
   font-size: 16px;
   font-weight: 700;
-  margin: 20px;
+  margin: 30px 40px;
 }
 .footer p {
   font-size: 10px;
   font-weight: 400;
-  margin: 20px 40px;
+  margin: 30px 40px;
   align-self: center;
 }
