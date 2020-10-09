@@ -16,6 +16,7 @@ sans-serif;
 }*/
 
 .flex-container {
+    position: relative;
     margin: 0 auto;
     max-width: 800px;
     min-width: 400px;
@@ -32,6 +33,7 @@ sans-serif;
     flex-wrap: wrap;
     justify-self: center;
     color: $copper;
+    z-index: 1;
 
     font: {
         size: 180px;
@@ -89,22 +91,4 @@ sans-serif;
         padding: 0;
     }
 
-}
-
-
-
-
-.test-bg {
-    position:absolute;
-    background-image: linear-gradient(white, black);
-    width: 400px;
-    height: 550px;
-    top:0;
-    left:0;
-}
-
-.test {
-    position: relative;
-    width: 400px;
-    height: 550px;
 }

@@ -7,6 +7,7 @@
     background-color: $graphite;
 }*/
 .flex-container {
+  position: relative;
   margin: 0 auto;
   max-width: 800px;
   min-width: 400px;
@@ -23,6 +24,7 @@
   flex-wrap: wrap;
   justify-self: center;
   color: #ba3c2c;
+  z-index: 1;
   font-size: 180px;
   font-weight: 400;
 }
@@ -63,19 +65,4 @@
 .footer ul {
   list-style: none;
   padding: 0;
-}
-
-.test-bg {
-  position: absolute;
-  background-image: linear-gradient(white, black);
-  width: 400px;
-  height: 550px;
-  top: 0;
-  left: 0;
-}
-
-.test {
-  position: relative;
-  width: 400px;
-  height: 550px;
 }
