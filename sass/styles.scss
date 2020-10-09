@@ -24,7 +24,7 @@ $graphite: #262626;
         height: 200px;
         text-align: center;
         margin: 70px 0;
-        color: $copper;
+        color: linear-gradient($cobalt, $copper);
 
         font: {
             size: 200px;
