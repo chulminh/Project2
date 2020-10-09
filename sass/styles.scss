@@ -11,32 +11,42 @@ sans-serif;
     padding: 0;
 }
 
-.body {}
+body {
+    background-color: $graphite;
+}
+
+.flex-container {
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $roboto;
+}
 
 .electro-jazz {
     display: flex;
-    width: 800px;
     text-align: center;
-    margin: 70px 0;
     display: flex;
     flex-wrap: wrap;
-    font-family: $roboto;
+    justify-self: center;
+    color: $copper;
 
     font: {
-        size: 200px;
+        size: 180px;
         weight: 400;
     }
 
     div {
         width: 200px;
         height: 200px;
+        margin: 80px 0;
     }
 }
 
 
 .footer {
-    max-width: 800px;
-    min-width: 400px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
@@ -44,7 +54,6 @@ sans-serif;
     border-top: 10px solid $copper;
     align-content: center;
     color: $cobalt;
-    font-family: $roboto;
 
     h2 {
         font: {
@@ -66,7 +75,12 @@ sans-serif;
         align-self: center;
     }
 
-    p {
+    .f1 {
+        width: 80px;
+    }
+
+    .f2,
+    .f3 {
         width: 60px;
     }
 
