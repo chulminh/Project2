@@ -2,36 +2,37 @@
 $copper: #ba3c2c;
 $cobalt:#4d81d5;
 $graphite: #262626;
+$roboto: "Roboto Condensed",
+arial,
+sans-serif;
 
 * {
     margin: 0;
     padding: 0;
-    background-color: $graphite;
 }
 
-.electro-jazz-container {
-    max-width: 800px;
-    min-width: 400px;
-    margin: 0 auto;
+.body {}
+
+.electro-jazz {
+    display: flex;
+    width: 800px;
+    text-align: center;
+    margin: 70px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    font-family: "Roboto Condensed", arial, sans-serif;
+    font-family: $roboto;
 
-    .electro-jazz {
+    font: {
+        size: 200px;
+        weight: 400;
+    }
+
+    div {
         width: 200px;
         height: 200px;
-        text-align: center;
-        margin: 70px 0;
-        color: $copper;
-
-        font: {
-            size: 200px;
-            weight: 400;
-        }
     }
 }
+
 
 .footer {
     max-width: 800px;
@@ -43,6 +44,7 @@ $graphite: #262626;
     border-top: 10px solid $copper;
     align-content: center;
     color: $cobalt;
+    font-family: $roboto;
 
     h2 {
         font: {
@@ -50,16 +52,27 @@ $graphite: #262626;
             weight: 700;
         }
 
-        margin: 30px 40px;
+        margin: 20px;
     }
 
-    p {
+    p,
+    ul {
         font: {
             size: 10px;
             weight: 400;
         }
 
-        margin: 30px 40px;
+        margin: 20px;
         align-self: center;
     }
+
+    p {
+        width: 60px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
 }

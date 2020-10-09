@@ -1,27 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #262626;
 }
 
-.electro-jazz-container {
-  max-width: 800px;
-  min-width: 400px;
-  margin: 0 auto;
+.electro-jazz {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  font-family: "Roboto Condensed", arial, sans-serif;
-}
-.electro-jazz-container .electro-jazz {
-  width: 200px;
-  height: 200px;
+  width: 800px;
   text-align: center;
   margin: 70px 0;
-  color: #ba3c2c;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto Condensed", arial, sans-serif;
   font-size: 200px;
   font-weight: 400;
+}
+.electro-jazz div {
+  width: 200px;
+  height: 200px;
 }
 
 .footer {
@@ -34,15 +29,24 @@
   border-top: 10px solid #ba3c2c;
   align-content: center;
   color: #4d81d5;
+  font-family: "Roboto Condensed", arial, sans-serif;
 }
 .footer h2 {
   font-size: 16px;
   font-weight: 700;
-  margin: 30px 40px;
+  margin: 20px;
 }
-.footer p {
+.footer p,
+.footer ul {
   font-size: 10px;
   font-weight: 400;
-  margin: 30px 40px;
+  margin: 20px;
   align-self: center;
+}
+.footer p {
+  width: 60px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
 }
