@@ -11,9 +11,9 @@ sans-serif;
     padding: 0;
 }
 
-body {
+/*body {
     background-color: $graphite;
-}
+}*/
 
 .flex-container {
     margin: 0 auto;
@@ -89,4 +89,22 @@ body {
         padding: 0;
     }
 
+}
+
+
+
+
+.test-bg {
+    position:absolute;
+    background-image: linear-gradient(white, black);
+    width: 400px;
+    height: 550px;
+    top:0;
+    left:0;
+}
+
+.test {
+    position: relative;
+    width: 400px;
+    height: 550px;
 }
