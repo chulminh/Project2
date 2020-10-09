@@ -1,6 +1,12 @@
+//variables
+$copper: #ba3c2c;
+$cobalt:#4d81d5;
+$graphite: #262626;
+
 * {
     margin: 0;
     padding: 0;
+    background-color: $graphite;
 }
 
 .electro-jazz-container {
@@ -18,6 +24,7 @@
         height: 200px;
         text-align: center;
         margin: 70px 0;
+        color: $copper;
 
         font: {
             size: 200px;
@@ -33,8 +40,9 @@
     display: flex;
     justify-content: space-around;
     flex: 1;
-    border-top: 10px solid #000000;
+    border-top: 10px solid $copper;
     align-content: center;
+    color: $cobalt;
 
     h2 {
         font: {
@@ -42,7 +50,7 @@
             weight: 700;
         }
 
-        margin: 20px;
+        margin: 30px 40px;
     }
 
     p {
@@ -51,7 +59,7 @@
             weight: 400;
         }
 
-        margin: 20px 40px;
+        margin: 30px 40px;
         align-self: center;
     }
 }
