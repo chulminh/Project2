@@ -4,8 +4,8 @@
 }
 
 .electro-jazz-container {
-    max-width: 1200px;
-    min-width:400px;
+    max-width: 800px;
+    min-width: 400px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -27,9 +27,8 @@
 }
 
 .footer {
-    position:relative;
-    max-width: 1200px;
-    min-width:400px;
+    max-width: 800px;
+    min-width: 400px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
@@ -52,7 +51,7 @@
             weight: 400;
         }
 
-        margin: 20px;
+        margin: 20px 40px;
         align-self: center;
     }
 }
