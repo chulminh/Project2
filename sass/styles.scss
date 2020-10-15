@@ -18,10 +18,10 @@ sans-serif;
 
 .ej2 {
     background-image: linear-gradient( red, blue, black);
-    position:fixed; 
-    width: 1500;
-    height: 1350;
-    z-index: -1;
+    position:absolute; 
+    width: 1500px;
+    height: 1350px;
+    z-index: 0;
     
 }
 
@@ -37,10 +37,12 @@ sans-serif;
     font-family: $roboto;
 
     img {
-        position:absolute;
+        position:fixed;
         width: 1500px;
-        height: 1800px;
-        z-index: 0;
+        height: 1350px;
+        z-index: 1;
+        top:-50px;
+
     }
 }
 
@@ -74,7 +76,7 @@ sans-serif;
     border-top: 10px solid $copper;
     align-content: center;
     color: $cobalt;
-    z-index: 1;
+    z-index: 2;
 
     h2 {
         font: {

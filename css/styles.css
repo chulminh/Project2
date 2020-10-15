@@ -8,10 +8,10 @@
 }*/
 .ej2 {
   background-image: linear-gradient(red, blue, black);
-  position: fixed;
-  width: 1500;
-  height: 1350;
-  z-index: -1;
+  position: absolute;
+  width: 1500px;
+  height: 1350px;
+  z-index: 0;
 }
 
 .flex-container {
@@ -25,10 +25,11 @@
   font-family: "Roboto Condensed", arial, sans-serif;
 }
 .flex-container img {
-  position: absolute;
+  position: fixed;
   width: 1500px;
-  height: 1800px;
-  z-index: 0;
+  height: 1350px;
+  z-index: 1;
+  top: -50px;
 }
 
 .electro-jazz {
@@ -56,7 +57,7 @@
   border-top: 10px solid #ba3c2c;
   align-content: center;
   color: #4d81d5;
-  z-index: 1;
+  z-index: 2;
 }
 .footer h2 {
   font-size: 16px;
