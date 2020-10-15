@@ -16,6 +16,12 @@
   justify-content: center;
   font-family: "Roboto Condensed", arial, sans-serif;
 }
+.flex-container img {
+  position: absolute;
+  width: 1200px;
+  height: 1440px;
+  z-index: 0;
+}
 
 .electro-jazz {
   display: flex;
