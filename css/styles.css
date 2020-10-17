@@ -1,84 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+/* Error: expected "{".
+ *     ,
+ * 123 |     background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%201280.png?v=1602913545746");
+ *     |                                                                                                                         ^
+ *     '
+ *   sass/styles.scss 123:121  root stylesheet */
 
-.ej2 {
-  margin: 0 auto;
-  background-image: linear-gradient(#586BDC, #D98CF9, #586BDC, #B274D6, #586BDC);
-  position: absolute;
-  width: 480px;
-  height: 4000px;
-  z-index: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.flex-container {
-  position: relative;
-  margin: 0 auto;
-  max-width: 800px;
-  min-width: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: "Roboto Condensed", arial, sans-serif;
-}
-.flex-container img {
-  position: fixed;
-  width: 480px;
-  height: 875px;
-  z-index: 1;
-}
-
-.electro-jazz {
-  display: flex;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-self: center;
-  color: #f93624;
-  z-index: 1;
-  font-size: 180px;
-  font-weight: 400;
-}
-.electro-jazz div {
-  width: 200px;
-  height: 200px;
-  margin: 80px 0;
-}
-
-.footer {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-  border-top: 10px solid #f93624;
-  align-content: center;
-  color: #fcde9c;
-  z-index: 2;
-}
-.footer h2 {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 20px;
-}
-.footer p,
-.footer ul {
-  font-size: 10px;
-  font-weight: 400;
-  margin: 20px;
-  align-self: center;
-}
-.footer .f1 {
-  width: 80px;
-}
-.footer .f2,
-.footer .f3 {
-  width: 60px;
-}
-.footer ul {
-  list-style: none;
-  padding: 0;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a     \2577 \a 123 \2502      background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%201280.png?v=1602913545746");\a     \2502                                                                                                                          ^\a     \2575 \a   sass/styles.scss 123:121  root stylesheet';
 }

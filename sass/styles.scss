@@ -14,7 +14,7 @@ sans-serif;
 }
 
 body {
-    //background-color: #586BDC;
+    background-color: #586BDC;
 }
 
 
@@ -41,12 +41,12 @@ body {
     justify-content: center;
     font-family: $roboto;
 
-    img {
+    .bgimg {
+        background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%20480.png?v=1602912897196");
         position:fixed;
         width: 480px;
-        height: 875px;
+        height: 950px;
         z-index: 1;
-
     }
 }
 
@@ -116,4 +116,9 @@ body {
         padding: 0;
     }
 
+}
+
+
+@media (min-width: 1280px) {
+    background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%201280.png?v=1602913545746");
 }
