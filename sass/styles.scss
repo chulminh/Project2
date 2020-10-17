@@ -1,0 +1,155 @@
+//variables
+//$copper: #ba3c2c;
+$copper: #f93624;
+//$cobalt:#4d81d5;
+$butter: #fcde9c;
+$graphite: #262626;
+$roboto: "Roboto Condensed",
+arial,
+sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2e4dff;
+}
+
+/* ---------- Background Gradient ---------- */
+.ej2 {
+    
+    background-image: linear-gradient(#2e4dff, #ce5cff, #2e4dff, #B274D6, #2e4dff);
+    position: absolute;
+    height: 4000px;
+    left: 50%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    z-index: 0;
+}
+
+/* ---------- Main Flex Container ---------- */
+.flex-container {
+    display: flex;
+    font-family: $roboto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 400px;
+    position: relative;
+
+    /* ---------- Background Image ---------- */
+    .bgimg {
+        background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%20480.png?v=1602912897196");
+        height: 950px;
+        position: fixed;
+        width: 480px;
+        z-index: 1;
+    }
+
+    /* ---------- Red Letters ---------- */
+    .electro-jazz {
+        color: $copper;
+        display: flex;
+        flex-wrap: wrap;
+        justify-self: center;
+        text-align: center;
+        z-index: 1;
+    
+        font: {
+            size: 180px;
+            weight: 400;
+        }
+    
+        div {
+            height: 200px;
+            margin: 80px 0;
+            width: 200px;
+        }
+    }
+} 
+
+/* ---------- Footer ---------- */
+.footer {
+    align-content: center;
+    border-top: 10px solid $copper;
+    color: $butter;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 2;
+
+    /* ---------- logo ---------- */
+    h2 {
+        font: {
+            size: 16px;
+            weight: 700;
+        }
+
+        margin: 20px;
+    }
+
+    /* ---------- Info Stuffs ---------- */
+    p,
+    ul {
+        font: {
+            size: 10px;
+            weight: 400;
+        }
+
+        align-self: center;
+        margin: 20px;
+    }
+
+    .f1 {
+        width: 80px;
+    }
+
+    .f2,
+    .f3 {
+        width: 60px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+}
+
+
+/* ---------- 600px + ---------- */
+@media (min-width: 600px) {
+    .flex-container {
+        .bgimg {
+            background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%201280.png?v=1602913545746");
+            width: 1280px;
+        }
+    }
+
+    .ej2 {
+        height: 2000px;
+        width: 1280px;
+    }
+}
+
+
+/* ---------- 1280px + ---------- */
+@media (min-width: 1200px) {
+    .flex-container {
+        .bgimg {
+            background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%20900.png?v=1602913549493");
+            width: 1900px;
+        }
+    }
+
+    .ej2 {
+        height: 2000px;
+        width: 1900px;
+    }
+}
