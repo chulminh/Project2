@@ -19,14 +19,14 @@ body {
 
 
 .ej2 {
-    margin:0 auto;
-    background-image: linear-gradient( #586BDC, #D98CF9, #586BDC, #B274D6, #586BDC);
-    position:absolute; 
+    margin: 0 auto;
+    background-image: linear-gradient(#586BDC, #D98CF9, #586BDC, #B274D6, #586BDC);
+    position: absolute;
     width: 480px;
     height: 4000px;
     z-index: 0;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -43,7 +43,7 @@ body {
 
     .bgimg {
         background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%20480.png?v=1602912897196");
-        position:fixed;
+        position: fixed;
         width: 480px;
         height: 950px;
         z-index: 1;
@@ -119,6 +119,30 @@ body {
 }
 
 
-@media (min-width: 1280px) {
-    background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%201280.png?v=1602913545746");
+@media (min-width: 600px) {
+    .flex-container {
+        .bgimg {
+            background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%201280.png?v=1602913545746");
+            width: 1280px;
+        }
+    }
+
+    .ej2 {
+        width: 1280px;
+        height: 2000px;
+    }
+}
+
+@media (min-width: 600px) {
+    .flex-container {
+        .bgimg {
+            background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%201280.png?v=1602913545746");
+            width: 1280px;
+        }
+    }
+
+    .ej2 {
+        width: 1280px;
+        height: 2000px;
+    }
 }
