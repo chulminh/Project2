@@ -33,31 +33,31 @@ body {
 
 /* ---------- Main Flex Container ---------- */
 .flex-container {
+    display: flex;
+    font-family: $roboto;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     max-width: 800px;
     min-width: 400px;
     position: relative;
-    justify-content: center;
-    font-family: $roboto;
 
     /* ---------- Background Image ---------- */
     .bgimg {
         background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%20480.png?v=1602912897196");
+        height: 950px;
         position: fixed;
         width: 480px;
-        height: 950px;
         z-index: 1;
     }
 
     /* ---------- Red Letters ---------- */
     .electro-jazz {
-        display: flex;
-        text-align: center;
+        color: $copper;
         display: flex;
         flex-wrap: wrap;
         justify-self: center;
-        color: $copper;
+        text-align: center;
         z-index: 1;
     
         font: {
@@ -66,22 +66,22 @@ body {
         }
     
         div {
-            width: 200px;
             height: 200px;
             margin: 80px 0;
+            width: 200px;
         }
     }
 } 
 
 /* ---------- Footer ---------- */
 .footer {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    border-top: 10px solid $copper;
     align-content: center;
+    border-top: 10px solid $copper;
     color: $butter;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
     z-index: 2;
 
     /* ---------- logo ---------- */
@@ -102,8 +102,8 @@ body {
             weight: 400;
         }
 
-        margin: 20px;
         align-self: center;
+        margin: 20px;
     }
 
     .f1 {
@@ -133,8 +133,8 @@ body {
     }
 
     .ej2 {
-        width: 1280px;
         height: 2000px;
+        width: 1280px;
     }
 }
 
@@ -149,7 +149,7 @@ body {
     }
 
     .ej2 {
-        width: 1900px;
         height: 2000px;
+        width: 1900px;
     }
 }

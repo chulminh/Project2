@@ -22,49 +22,49 @@ body {
 
 /* ---------- Main Flex Container ---------- */
 .flex-container {
+  display: flex;
+  font-family: "Roboto Condensed", arial, sans-serif;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
   max-width: 800px;
   min-width: 400px;
   position: relative;
-  justify-content: center;
-  font-family: "Roboto Condensed", arial, sans-serif;
   /* ---------- Background Image ---------- */
   /* ---------- Red Letters ---------- */
 }
 .flex-container .bgimg {
   background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%20480.png?v=1602912897196");
+  height: 950px;
   position: fixed;
   width: 480px;
-  height: 950px;
   z-index: 1;
 }
 .flex-container .electro-jazz {
-  display: flex;
-  text-align: center;
+  color: #f93624;
   display: flex;
   flex-wrap: wrap;
   justify-self: center;
-  color: #f93624;
+  text-align: center;
   z-index: 1;
   font-size: 180px;
   font-weight: 400;
 }
 .flex-container .electro-jazz div {
-  width: 200px;
   height: 200px;
   margin: 80px 0;
+  width: 200px;
 }
 
 /* ---------- Footer ---------- */
 .footer {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-  border-top: 10px solid #f93624;
   align-content: center;
+  border-top: 10px solid #f93624;
   color: #fcde9c;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
   z-index: 2;
   /* ---------- logo ---------- */
   /* ---------- Info Stuffs ---------- */
@@ -78,8 +78,8 @@ body {
 .footer ul {
   font-size: 10px;
   font-weight: 400;
-  margin: 20px;
   align-self: center;
+  margin: 20px;
 }
 .footer .f1 {
   width: 80px;
@@ -101,8 +101,8 @@ body {
   }
 
   .ej2 {
-    width: 1280px;
     height: 2000px;
+    width: 1280px;
   }
 }
 /* ---------- 1280px + ---------- */
@@ -113,7 +113,7 @@ body {
   }
 
   .ej2 {
-    width: 1900px;
     height: 2000px;
+    width: 1900px;
   }
 }
