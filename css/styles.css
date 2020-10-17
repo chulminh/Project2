@@ -4,30 +4,33 @@
 }
 
 body {
-  background-color: #586BDC;
+  background-color: #2e4dff;
 }
 
+/* ---------- Background Gradient ---------- */
 .ej2 {
-  margin: 0 auto;
-  background-image: linear-gradient(#586BDC, #D98CF9, #586BDC, #B274D6, #586BDC);
+  background-image: linear-gradient(#2e4dff, #ce5cff, #2e4dff, #B274D6, #2e4dff);
   position: absolute;
-  width: 480px;
   height: 4000px;
-  z-index: 0;
-  top: 50%;
   left: 50%;
+  margin: 0 auto;
+  top: 50%;
   transform: translate(-50%, -50%);
+  width: 480px;
+  z-index: 0;
 }
 
+/* ---------- Main Flex Container ---------- */
 .flex-container {
-  position: relative;
+  flex-wrap: wrap;
   margin: 0 auto;
   max-width: 800px;
   min-width: 400px;
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
   justify-content: center;
   font-family: "Roboto Condensed", arial, sans-serif;
+  /* ---------- Background Image ---------- */
+  /* ---------- Red Letters ---------- */
 }
 .flex-container .bgimg {
   background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%20480.png?v=1602912897196");
@@ -36,8 +39,7 @@ body {
   height: 950px;
   z-index: 1;
 }
-
-.electro-jazz {
+.flex-container .electro-jazz {
   display: flex;
   text-align: center;
   display: flex;
@@ -48,12 +50,13 @@ body {
   font-size: 180px;
   font-weight: 400;
 }
-.electro-jazz div {
+.flex-container .electro-jazz div {
   width: 200px;
   height: 200px;
   margin: 80px 0;
 }
 
+/* ---------- Footer ---------- */
 .footer {
   flex-wrap: wrap;
   display: flex;
@@ -63,6 +66,8 @@ body {
   align-content: center;
   color: #fcde9c;
   z-index: 2;
+  /* ---------- logo ---------- */
+  /* ---------- Info Stuffs ---------- */
 }
 .footer h2 {
   font-size: 16px;
@@ -88,6 +93,7 @@ body {
   padding: 0;
 }
 
+/* ---------- 600px + ---------- */
 @media (min-width: 600px) {
   .flex-container .bgimg {
     background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%201280.png?v=1602913545746");
@@ -99,14 +105,15 @@ body {
     height: 2000px;
   }
 }
-@media (min-width: 600px) {
+/* ---------- 1280px + ---------- */
+@media (min-width: 1200px) {
   .flex-container .bgimg {
-    background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%201280.png?v=1602913545746");
-    width: 1280px;
+    background-image: url("https://cdn.glitch.com/1fe1b718-1c7f-4e3e-bccf-455d1202e652%2FEJ%20900.png?v=1602913549493");
+    width: 1900px;
   }
 
   .ej2 {
-    width: 1280px;
+    width: 1900px;
     height: 2000px;
   }
 }
